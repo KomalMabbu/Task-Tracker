@@ -1,3 +1,5 @@
 FROM nginx:1.27.3-alpine
 COPY . /usr/share/nginx/html
-EXPOSE 5500
+WORKDIR /usr/share/nginx/html
+RUN ls -l
+EXPOSE 80
